@@ -2,13 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* 待办事项应用设计系统 - 所有颜色必须使用 HSL 格式 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 240 10% 98%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -17,8 +15,8 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -26,15 +24,27 @@ All colors MUST be HSL.
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
     --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --input: 0 0% 100%;
+    --ring: 217 91% 60%;
+
+    /* 任务优先级颜色 */
+    --priority-high: 0 84% 60%;           /* 红色 - 非常重要 */
+    --priority-high-foreground: 0 0% 100%;
+    --priority-medium: 45 93% 58%;        /* 黄色 - 普通 */
+    --priority-medium-foreground: 222.2 84% 4.9%;
+    --priority-low: 142 76% 36%;          /* 绿色 - 低 */
+    --priority-low-foreground: 0 0% 100%;
+
+    /* 渐变色 */
+    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60%), hsl(142 76% 36%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(240 10% 98%));
 
     --radius: 0.5rem;
 

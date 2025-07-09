@@ -52,6 +52,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// 任务优先级颜色配置
+				priority: {
+					high: 'hsl(var(--priority-high))',
+					'high-foreground': 'hsl(var(--priority-high-foreground))',
+					medium: 'hsl(var(--priority-medium))',
+					'medium-foreground': 'hsl(var(--priority-medium-foreground))',
+					low: 'hsl(var(--priority-low))',
+					'low-foreground': 'hsl(var(--priority-low-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
